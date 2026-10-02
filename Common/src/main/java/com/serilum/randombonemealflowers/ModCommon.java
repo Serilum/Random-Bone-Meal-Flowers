@@ -1,8 +1,8 @@
-package com.natamus.randombonemealflowers;
+package com.serilum.randombonemealflowers;
 
 
 import com.natamus.collective.globalcallbacks.GlobalCropCallback;
-import com.natamus.randombonemealflowers.events.FlowerEvent;
+import com.serilum.randombonemealflowers.events.FlowerEvent;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;

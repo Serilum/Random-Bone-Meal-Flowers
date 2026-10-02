@@ -1,8 +1,8 @@
-package com.natamus.randombonemealflowers.util;
+package com.serilum.randombonemealflowers.util;
 
 import com.natamus.collective.data.GlobalVariables;
 import com.natamus.collective.functions.DataFunctions;
-import com.natamus.randombonemealflowers.data.Variables;
+import com.serilum.randombonemealflowers.data.Variables;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;

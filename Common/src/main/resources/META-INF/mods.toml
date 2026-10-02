@@ -1,29 +1,29 @@
 modLoader="javafml"
 loaderVersion="*"
-license="All rights reserved"
+license="All Rights Reserved"
 issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Random%20Bone%20Meal%20Flowers"
 logoFile="icon.png"
 
 [[mods]]
 modId="randombonemealflowers"
-version="4.7"
+version="4.8"
 displayName="Random Bone Meal Flowers"
 displayURL="https://serilum.com/mod/random-bone-meal-flowers"
-authors="Rick South"
+authors="Serilum"
 description='''Randomizes the flowers spawned by bone meal, allowing all (modded) types to spawn everywhere.
 '''
 credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
 
-Alister, Andrean Olgo, aternosorg, Cherriesaurus, David Sanchez, drdog111, Michael W. S., t128, Tyler Behl, XAgent   
+Andrean Olgo, AnyankaT, aternosorg, Cherriesaurus, Linda Jansen, MWS, Tyler Behl   
 
-If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
+If you would like to contribute too, check out https://serilum.com/donate Appreciate it! <3   
 '''
 
 [[dependencies.randombonemealflowers]]
     modId="collective"
     type="required"
     mandatory=true
-    versionRange="[7.91,)"
+    versionRange="[8.40,)"
     ordering="NONE"
     side="BOTH"
 
