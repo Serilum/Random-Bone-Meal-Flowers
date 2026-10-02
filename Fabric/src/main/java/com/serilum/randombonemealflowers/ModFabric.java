@@ -1,9 +1,9 @@
-package com.natamus.randombonemealflowers;
+package com.serilum.randombonemealflowers;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.randombonemealflowers.util.Reference;
-import com.natamus.randombonemealflowers.util.Util;
+import com.serilum.randombonemealflowers.util.Reference;
+import com.serilum.randombonemealflowers.util.Util;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLevelEvents;
 import net.minecraft.server.MinecraftServer;
