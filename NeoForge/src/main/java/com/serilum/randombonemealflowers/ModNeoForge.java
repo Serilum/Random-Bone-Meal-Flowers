@@ -1,9 +1,9 @@
-package com.natamus.randombonemealflowers;
+package com.serilum.randombonemealflowers;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.randombonemealflowers.neoforge.events.NeoForgeFlowerEvent;
-import com.natamus.randombonemealflowers.util.Reference;
+import com.serilum.randombonemealflowers.neoforge.events.NeoForgeFlowerEvent;
+import com.serilum.randombonemealflowers.util.Reference;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;

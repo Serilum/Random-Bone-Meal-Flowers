@@ -1,6 +1,6 @@
-package com.natamus.randombonemealflowers.events;
+package com.serilum.randombonemealflowers.events;
 
-import com.natamus.randombonemealflowers.util.Util;
+import com.serilum.randombonemealflowers.util.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.TickTask;
 import net.minecraft.world.item.ItemStack;

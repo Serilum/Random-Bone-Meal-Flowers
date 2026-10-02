@@ -1,9 +1,9 @@
-package com.natamus.randombonemealflowers;
+package com.serilum.randombonemealflowers;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.randombonemealflowers.forge.events.ForgeFlowerEvent;
-import com.natamus.randombonemealflowers.util.Reference;
+import com.serilum.randombonemealflowers.forge.events.ForgeFlowerEvent;
+import com.serilum.randombonemealflowers.util.Reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -28,7 +28,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	MinecraftForge.EVENT_BUS.register(ForgeFlowerEvent.class);
+		MinecraftForge.EVENT_BUS.register(ForgeFlowerEvent.class);
 	}
 
 	private static void setGlobalConstants() {
