@@ -1,8 +1,8 @@
 package com.serilum.randombonemealflowers.events;
 
+import com.natamus.collective.functions.TaskFunctions;
 import com.serilum.randombonemealflowers.util.Util;
 import net.minecraft.core.BlockPos;
-import net.minecraft.server.TickTask;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -30,12 +30,12 @@ public class FlowerEvent {
 			oldblocks.add(block);
 		}
 
-		world.getServer().execute(new TickTask(world.getServer().getTickCount(), () -> {
+		TaskFunctions.enqueueCollectiveServerTask(world.getServer(), () -> {
 			Iterator < BlockPos > newit = BlockPos.betweenClosedStream(x - 6, y, z - 6, x + 6, y + 1, z + 6).iterator();
 			while (newit.hasNext()) {
 				BlockPos bp = newit.next();
 				Block block = world.getBlockState(bp).getBlock();
-				if (Util.allflowers.contains(block) && !Util.allflowers.contains(oldblocks.get(0))) {
+				if (Util.allflowers.contains(block) && oldblocks.get(0).defaultBlockState().isAir()) {
 					Block randomflower = Util.getRandomFlower();
 
 					world.setBlockAndUpdate(bp, randomflower.defaultBlockState());
@@ -43,6 +43,6 @@ public class FlowerEvent {
 
 				oldblocks.remove(0);
 			}
-		}));
+		}, 0);
 	}
 }

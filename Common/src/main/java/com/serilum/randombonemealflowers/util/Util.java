@@ -6,6 +6,7 @@ import com.serilum.randombonemealflowers.data.Variables;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FlowerBlock;
@@ -62,7 +63,7 @@ public class Util {
 		}
 		
 		for (Block block : blockRegistry) {
-			if (block instanceof FlowerBlock) {
+			if (block instanceof FlowerBlock || block.defaultBlockState().is(BlockTags.SMALL_FLOWERS)) {
 				Identifier rl = blockRegistry.getKey(block);
 				if (rl == null) {
 					continue;
@@ -74,7 +75,7 @@ public class Util {
 				
 				if (writer != null) {
 					String prefix = "";
-					if (name.equals("minecraft:wither_rose")) {
+					if (name.equals("minecraft:wither_rose") || name.equals("betterarcheology:growth_totem")) {
 						blacklist.add(name);
 						prefix = "!";
 					}
