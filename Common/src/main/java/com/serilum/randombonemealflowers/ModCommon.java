@@ -2,7 +2,9 @@ package com.serilum.randombonemealflowers;
 
 
 import com.natamus.collective.globalcallbacks.GlobalCropCallback;
+import com.serilum.randombonemealflowers.config.ConfigHandler;
 import com.serilum.randombonemealflowers.events.FlowerEvent;
+import com.serilum.randombonemealflowers.util.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -12,7 +14,10 @@ import net.minecraft.world.level.block.state.BlockState;
 public class ModCommon {
 
 	public static void init() {
+		ConfigHandler.initConfig();
 		loadEvents();
+
+		Util.moveBlacklistFileIntoConfig();
 	}
 
 	private static void loadEvents() {

@@ -36,9 +36,10 @@ public class FlowerEvent {
 				BlockPos bp = newit.next();
 				Block block = world.getBlockState(bp).getBlock();
 				if (Util.allflowers.contains(block) && oldblocks.get(0).defaultBlockState().isAir()) {
-					Block randomflower = Util.getRandomFlower();
-
-					world.setBlockAndUpdate(bp, randomflower.defaultBlockState());
+					Block randomflower = Util.getRandomFlower(world);
+					if (randomflower != null) {
+						world.setBlockAndUpdate(bp, randomflower.defaultBlockState());
+					}
 				}
 
 				oldblocks.remove(0);
